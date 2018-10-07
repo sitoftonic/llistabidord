@@ -32,10 +32,9 @@ LlistaBidOrd LLISTABIDORD_crea() {
 }
 
 
-/* This method inserts an element to the list. First, locates the position
-   where the element has to be because it's ordered and then creates a new
-   node with the element value and adds the node to the list. Returns if
-   has been an error during this process */
+/* This method inserts an element to the list. First, locates the position where the
+   element has to be because it's ordered and then creates a new node with the element
+   value and adds the node to the list. Returns if has been an error during this process */
 int LLISTABIDORD_insereixOrdenat(LlistaBidOrd *l, int element) {
     int trobat = 0, error = 0;
     Node *aux;
@@ -44,7 +43,7 @@ int LLISTABIDORD_insereixOrdenat(LlistaBidOrd *l, int element) {
     while (!trobat && l->pdi->seg != NULL) {
         if (!LLISTABIDORD_buida(*l)) {
             if (l->pdi->num > element) {
-                l->pdi = l->pdi->seg;
+                LLISTABIDORD_avanca(l);
             }
             else {
                 trobat = 1;
