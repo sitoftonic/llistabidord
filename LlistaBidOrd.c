@@ -75,17 +75,21 @@ void LLISTABIDORD_vesInici(LlistaBidOrd *l) {
     l->pdi = l->cap->seg;
 }
 
+
 /* This method puts the PDI pointer at the last element of the list */
 void LLISTABIDORD_vesFinal(LlistaBidOrd *l) {
     l->pdi = l->ult->ant;
 }
 
-/* This method returns true if the list is empty */
+
+/* This method returns 1 if the list is empty */
 int LLISTABIDORD_buida(LlistaBidOrd l) {
     return l.cap->seg == l.ult;
 }
 
 
+/* This method destroys every node from the list and then puts
+   the 3 pointers from LlistaBidOrd to NULL */
 void LLISTABIDORD_destrueix(LlistaBidOrd *l) {
     Node *aux;
 
