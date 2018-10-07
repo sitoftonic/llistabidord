@@ -139,6 +139,8 @@ void LLISTABIDORD_retrocedeix(LlistaBidOrd *l) {
     l->pdi = l->pdi->ant;
 }
 
+
+/* This method returns the integer from the node which is pointed with PDI */
 int LLISTABIDORD_consulta(LlistaBidOrd l) {
    return l.pdi->num;
 }
