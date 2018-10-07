@@ -102,6 +102,7 @@ void LLISTABIDORD_destrueix(LlistaBidOrd *l) {
     l->pdi = NULL;
 }
 
+/* This method returns the number of nodes of the list */
 int LLISTABIDORD_getSize(LlistaBidOrd l) {
     int size = 0;
 
