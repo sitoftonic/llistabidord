@@ -121,6 +121,8 @@ int LLISTABIDORD_fi(LlistaBidOrd l) {
     return l.pdi == l.ult;
 }
 
+
+/* This method returns 1 if PDI is pointing to the CAP node */
 int LLISTABIDORD_inici(LlistaBidOrd l) {
     return l.pdi == l.cap;
 }
