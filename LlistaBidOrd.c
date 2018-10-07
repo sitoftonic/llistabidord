@@ -32,6 +32,9 @@ LlistaBidOrd LLISTABIDORD_crea() {
 }
 
 
+/* This method inserts an element to the list. First, locates the position
+   where the element has to be because it's ordered and then creates a new
+   node with the element value and adds the node to the list */
 int LLISTABIDORD_insereixOrdenat(LlistaBidOrd *l, int element) {
     int trobat = 0, error = 0;
     Node *aux;
