@@ -7,6 +7,13 @@
 /* LIST_SIZE constant used to establish number of elements in the list */
 #define LIST_SIZE 40
 
+
+
+
+
+/* MAIN FUNCTION: Creates a list and introduces LIST_SIZE elements with
+   an integer between 0 and 100 and then deletes every node and destroys de list */
+
 int main() {
     LlistaBidOrd l;
     int i, num, error, size;
