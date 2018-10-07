@@ -6,7 +6,7 @@
 
 
 /* This method creates a LlistaBidOrd element and creates 3 pointers to 2 Nodes,
-   linking them together with seg and ant pointers from each Node */
+   linking them together with seg and ant pointers from each Node. Returns the list */
 LlistaBidOrd LLISTABIDORD_crea() {
     LlistaBidOrd l;
 
@@ -34,7 +34,8 @@ LlistaBidOrd LLISTABIDORD_crea() {
 
 /* This method inserts an element to the list. First, locates the position
    where the element has to be because it's ordered and then creates a new
-   node with the element value and adds the node to the list */
+   node with the element value and adds the node to the list. Returns if
+   has been an error during this process */
 int LLISTABIDORD_insereixOrdenat(LlistaBidOrd *l, int element) {
     int trobat = 0, error = 0;
     Node *aux;
@@ -79,7 +80,7 @@ void LLISTABIDORD_vesFinal(LlistaBidOrd *l) {
     l->pdi = l->ult->ant;
 }
 
-
+/* This method returns true if the list is empty */
 int LLISTABIDORD_buida(LlistaBidOrd l) {
     return l.cap->seg == l.ult;
 }
