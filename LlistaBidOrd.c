@@ -127,6 +127,8 @@ int LLISTABIDORD_inici(LlistaBidOrd l) {
     return l.pdi == l.cap;
 }
 
+
+/* This method puts the PDI pointer to the PDI->SEG node (the next one to the right) */
 void LLISTABIDORD_avanca(LlistaBidOrd *l) {
     l->pdi = l->pdi->seg;
 }
