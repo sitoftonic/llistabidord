@@ -4,7 +4,7 @@
 
 #include "LlistaBidOrd.h"
 
-#define LIST_SIZE 20
+#define LIST_SIZE 40
 
 int main() {
     LlistaBidOrd l;
@@ -17,7 +17,7 @@ int main() {
         printf("List succesfully created OK\n");
         printf("Starting test...\n");
         for (i = 0; i < LIST_SIZE; i++) {
-            num = rand() % 30;
+            num = rand() % 100;
             error = LLISTABIDORD_insereixOrdenat(&l, num);
             if (!error) {
                 printf("Added %d to the list\n", num);
