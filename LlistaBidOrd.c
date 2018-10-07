@@ -133,6 +133,8 @@ void LLISTABIDORD_avanca(LlistaBidOrd *l) {
     l->pdi = l->pdi->seg;
 }
 
+
+/* This method puts the PDI pointer to the PDI->ANT node (the next one to the left) */
 void LLISTABIDORD_retrocedeix(LlistaBidOrd *l) {
     l->pdi = l->pdi->ant;
 }
