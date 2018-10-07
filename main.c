@@ -4,6 +4,7 @@
 
 #include "LlistaBidOrd.h"
 
+/* LIST_SIZE constant used to establish number of elements in the list */
 #define LIST_SIZE 40
 
 int main() {
