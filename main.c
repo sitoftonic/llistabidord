@@ -8,14 +8,14 @@
 
 int main() {
     LlistaBidOrd l;
-    int i, num, error;
+    int i, num, error, size;
     char option[3];
 
     do {
         printf("\nInitializing list...\n");
         l = LLISTABIDORD_crea();
         printf("List succesfully created OK\n");
-        printf("Starting test...");
+        printf("Starting test...\n");
         for (i = 0; i < LIST_SIZE; i++) {
             num = rand() % 30;
             error = LLISTABIDORD_insereixOrdenat(&l, num);
@@ -35,8 +35,9 @@ int main() {
             printf("%d\t", LLISTABIDORD_consulta(l));
             LLISTABIDORD_retrocedeix(&l);
         }
-        printf("\nList size: %d\n", LLISTABIDORD_getSize(l));
-        printf("List succesfully tested\n");
+        size = LLISTABIDORD_getSize(l);
+        printf("\nList size: %d", size);
+        printf("\nList succesfully tested\n");
         printf("Destroying List...\n");
         LLISTABIDORD_destrueix(&l);
         printf("Press y to repeat or n to exit...");
