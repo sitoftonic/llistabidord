@@ -69,7 +69,7 @@ int LLISTABIDORD_insereixOrdenat(LlistaBidOrd *l, int element) {
 }
 
 
-
+/* This method puts the PDI pointer at the first element of the list */
 void LLISTABIDORD_vesInici(LlistaBidOrd *l) {
     l->pdi = l->cap->seg;
 }
