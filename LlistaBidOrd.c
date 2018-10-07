@@ -102,6 +102,7 @@ void LLISTABIDORD_destrueix(LlistaBidOrd *l) {
     l->pdi = NULL;
 }
 
+
 /* This method returns the number of nodes of the list */
 int LLISTABIDORD_getSize(LlistaBidOrd l) {
     int size = 0;
@@ -114,6 +115,8 @@ int LLISTABIDORD_getSize(LlistaBidOrd l) {
     return size;
 }
 
+
+/* This method returns 1 if PDI is pointing to the ULT node */
 int LLISTABIDORD_fi(LlistaBidOrd l) {
     return l.pdi == l.ult;
 }
