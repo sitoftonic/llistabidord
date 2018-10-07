@@ -5,7 +5,8 @@
 #include "LlistaBidOrd.h"
 
 
-
+/* This method creates a LlistaBidOrd element and creates 3 pointers to 2 Nodes,
+   linking them together with seg and ant pointers from each Node */
 LlistaBidOrd LLISTABIDORD_crea() {
     LlistaBidOrd l;
 
