@@ -55,7 +55,7 @@ int LLISTABIDORD_insereixOrdenat(LlistaBidOrd *l, int element) {
     }
     aux = (Node*) malloc (sizeof(Node));
     if (aux == NULL) {
-        printf("ERROR");
+        printf("Error: Memory reservation failed when creating the element\n");
     }
     else {
         aux->num = element;
